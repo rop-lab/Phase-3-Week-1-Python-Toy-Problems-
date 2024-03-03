@@ -2,9 +2,9 @@ def solution(A):
     n = len(A)
     moves = 0
     
-    # Iterate through each box
+    # Iteration through each box
     for i in range(n):
-        # Calculate the number of bricks needed to add or remove
+        # number of bricks needed to add or remove
         diff = A[i] - 10
         
         # If the box already contains 10 bricks, move to the next box
@@ -24,7 +24,7 @@ def solution(A):
     
     return moves
 
-# Test cases
+# Test
 print(solution([7, 15, 10, 8]))  # Output: 7
 print(solution([11, 10, 8, 12, 8, 10, 11]))  # Output: 6
 print(solution([7, 14, 10]))  # Output: -1
