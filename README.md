@@ -20,6 +20,76 @@ Here's how the code works:
 ## Example Usage
 
 ```python
-print(solution([7, 15, 10, 8]))  # Output: 7
-print(solution([11, 10, 8, 12, 8, 10, 11]))  # Output: 6
-print(solution([7, 14, 10]))  # Output: -1
+print(solution([7, 15, 10, 8]))  
+print(solution([11, 10, 8, 12, 8, 10, 11]))  
+print(solution([7, 14, 10])) 
+```
+
+## Challenge_two
+## Pair Sum with Equal Digit Sums
+
+This Python script provides a solution to find the maximum sum of pairs of numbers from a given list where each pair has equal digit sums.
+
+# Functionality
+
+The script includes the following functions:
+
+### `digit_sum(num)`
+
+This function calculates the sum of digits of a given number.
+
+#### Arguments
+
+- `num`: The input number.
+
+#### Returns
+
+- The sum of the digits of the input number.
+
+### `solution(A)`
+
+This function finds the maximum sum of pairs of numbers from a given list `A`, where each pair has equal digit sums.
+
+#### Arguments
+
+- `A`: A list of integers.
+
+#### Returns
+
+- The maximum sum of pairs of numbers with equal digit sums. If no such pairs exist, it returns -1.
+
+## Example Usage
+
+```python
+print(solution([51, 71, 17, 42]))  # Output: 93 (51 + 42)
+print(solution([42, 33, 60]))      # Output: 102 (42 + 60)
+print(solution([51, 32, 43]))      # Output: -1 (No pairs with equal digit sum)
+```
+
+## Challenge_three
+
+# Letter Distribution
+
+This Python script generates a string of lowercase letters, distributing them evenly based on the given integer input `N`.
+
+## Function Description
+
+The `solution(N)` function takes an integer `N` as input and returns a string where each lowercase letter occurs a specific number of times, determined by the value of `N`. The distribution is such that each letter appears as many times as possible, with any remaining characters evenly distributed among the letters.
+
+## Algorithm
+
+1. Calculate the maximum number of times each letter can occur by dividing `N` by 26.
+2. Generate a string containing each letter repeated `max_count` times.
+3. Distribute any remaining characters evenly among the letters.
+4. Return the resulting string.
+
+## Usage
+
+To use the script, call the `solution(N)` function with an integer `N` as input.
+
+```python
+print(solution(5))   # Output: "abcde"
+print(solution(10))  # Output: "abcdefghij"
+print(solution(26))  # Output: "abcdefghijklmnopqrstuvwxyz"
+print(solution(30))  # Output: "abbcdeefghijjklmnopqrstuvwxzy" (each letter occurs twice except 'y' occurs once)
+```

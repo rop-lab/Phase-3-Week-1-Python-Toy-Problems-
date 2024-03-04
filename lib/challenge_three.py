@@ -12,7 +12,7 @@ def solution(N):
     
     return result
 
-# Test cases
+# Test 
 print(solution(5))  # Output: "abcde"
 print(solution(10)) # Output: "abcdefghij"
 print(solution(26)) # Output: "abcdefghijklmnopqrstuvwxyz"
